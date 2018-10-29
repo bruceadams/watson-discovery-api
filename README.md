@@ -1,6 +1,7 @@
 # Watson Discovery API
 
 This is a rewrite and update of [wdsapi](https://github.com/bruceadams/wdsapi).
+[![Build Status](https://www.travis-ci.com/bruceadams/watson-discovery-api.svg?branch=master)](https://www.travis-ci.com/bruceadams/watson-discovery-api)
 
 ## Overall structure
 
