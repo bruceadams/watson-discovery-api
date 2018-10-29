@@ -1,0 +1,13 @@
+language: rust
+install: rustup target add x86_64-unknown-linux-musl
+script:
+  - cargo build --target x86_64-unknown-linux-musl --verbose
+  - cargo test  --target x86_64-unknown-linux-musl --verbose
+rust:
+  - stable
+  - beta
+  - nightly
+matrix:
+  allow_failures:
+    - rust: nightly
+  fast_finish: true
