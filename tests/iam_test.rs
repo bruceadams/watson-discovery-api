@@ -5,6 +5,7 @@ use tokio_core::reactor;
 use watson_discovery_api::iam;
 
 #[test]
+#[ignore]
 /// Actually get tokens from the IAM service
 fn iam_token_integration() {
     let mut core = reactor::Core::new().unwrap();
