@@ -1,12 +1,8 @@
 language: rust
-install: rustup target add x86_64-unknown-linux-musl
-env:
-  global:
-    - CC=clang
-    - CXX=clang++
-script:
-  - cargo build --target x86_64-unknown-linux-musl --verbose
-  - cargo test  --target x86_64-unknown-linux-musl --verbose
+os:
+  - linux
+  - osx
+  - windows
 rust:
   - stable
   - beta
